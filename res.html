@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammu's Kitchen - Delicious Food at Your Doorstep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Ammu's Kitchen</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Ammu's Kitchen</h2>
+            <p>Your favorite dishes delivered right to your door.</p>
+            <a href="#order" class="cta-btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://carveyourcraving.com/wp-content/uploads/2021/06/chocolate-icecream-in-an-icecream-maker.jpg" alt="Dish 1">
+                <h3> Icecream</h3>
+                <p>Delicious and flavorful dish made with love!</p>
+                <br>
+                <button class="order-btn">Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice-500x500.jpg" alt="Dish 2">
+                <h3>Cake </h3>
+                <p>A traditional recipe with a modern twist!</p>
+                <button class="order-btn">Add to Order</button>
+            </div>
+            <!-- Add more dishes here -->
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order">
+        <h2>Online Ordering</h2>
+        <form id="order-form">
+            <label for="dish">Choose your dish:</label>
+            <select id="dish" required>
+                <option value="">--Select--</option>
+                <option value="dish1"> Icecream</option>
+                <option value="dish2">Cake</option>
+                <!-- Add more options here -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1" required>
+
+            <button type="submit" id="order-btn">Place Order</button>
+        </form>
+        <div id="order-summary"></div>s
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="contact-info">
+            <p>Address: 123 Kitchen St, Food Town</p>
+            <p>Email: ammu@kitchen.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
